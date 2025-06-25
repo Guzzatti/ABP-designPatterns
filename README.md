@@ -57,6 +57,20 @@ Para o padrão builder foi criada a interface `IComputadorBuilder` e a partir de
 - `PresetComputadorBuilder` cria o pc a partir de configurações pré definidas (GAMER, BASICO E SERVIDOR).
 
 ### Composite
+- Componente.ts
+Define a interface Componente, base do padrão Composite. Declara métodos que os componentes simples e compostos devem implementar, como exibirInformacoes().
+
+- ComponenteSimples.ts
+Implementa a interface Componente representando itens simples (como memória, HD, etc.). Exibe seu nome e preço individual.
+
+- ComponenteComposto.ts
+Também implementa Componente, mas representa estruturas que contêm outros componentes (simples ou compostos). Possui métodos para adicionar/remover componentes e calcular o preço total.
+
+- Computador.ts
+Subclasse de ComponenteComposto. Representa um computador como um conjunto de peças, reutilizando a lógica do componente composto com o nome "Computador".
+
+- KitComponentes.ts
+Outro tipo de ComponenteComposto que representa um "kit" com múltiplos componentes. Serve para demonstrar a flexibilidade do padrão composite.
 
 ## ⚙ Como executar o projeto
 
