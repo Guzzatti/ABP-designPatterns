@@ -63,6 +63,6 @@ Para o padrão builder foi criada a interface `IComputadorBuilder` e a partir de
 Após rodar o comando `npm install` para instalar as dependências, rode o seguinte comando para rodar o arquivo main.ts sem compilar o projeto:
 
 ```
-npx ts-node main.ts
+npx ts-node src/main.ts
 ```
 Dessa forma, é possível ver o retorno dos exemplos de uso de cada padrão!
