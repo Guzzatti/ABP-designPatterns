@@ -76,10 +76,3 @@ export function createComputer(factory: ComputerFactory): Computer {
   const c = factory.createCase().name
   return new Computer(p, m, r, s, g, ps, c)
 }
-
-// Execução
-const intelPC = createComputer(new IntelFactory());
-intelPC.displaySpecs();
-
-const amdPC = createComputer(new AmdFactory());
-amdPC.displaySpecs();
